@@ -1,10 +1,12 @@
 import './App.css';
 import GridLayout from './components/GridLayout';
+import DefaultLayout from './Layout/DefaultLayout';
 
 function App() {
   return (
     <>
-      <GridLayout/>
+      {/* <GridLayout /> */}
+      <DefaultLayout/>
     </>
   );
 }

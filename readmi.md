@@ -1,4 +1,3 @@
-
 ### Ant Design
 
 # `Buổi 01:`
@@ -55,6 +54,7 @@
 ## **07: Component: `Dropdown`**
 
 - ![Thuộc tính Dropdown](./Docs/Sources/Images/image-28.png)
+- <b>Sử dụng hàm `dropdownRender` đê custom `Dropdown`</b>
 
 ## **08: Component: `Menu`**
 
