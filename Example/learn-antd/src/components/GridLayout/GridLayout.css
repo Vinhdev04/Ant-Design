@@ -1,0 +1,13 @@
+.box {
+  background-color: rgb(187, 132, 238);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.h-300 {
+  height: 300px;
+}
