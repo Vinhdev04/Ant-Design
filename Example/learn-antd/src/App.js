@@ -1,12 +1,11 @@
 import './App.css';
-import GridLayout from './components/GridLayout';
-import DefaultLayout from './Layout/DefaultLayout';
-
+import AllRoutes from "./components/AllRoutes";
 function App() {
   return (
     <>
       {/* <GridLayout /> */}
-      <DefaultLayout/>
+      {/* <DefaultLayout/> */}
+      <AllRoutes/>
     </>
   );
 }
