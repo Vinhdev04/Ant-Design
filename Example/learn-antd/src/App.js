@@ -1,11 +1,13 @@
-import './App.css';
+import "./App.css";
 import AllRoutes from "./components/AllRoutes";
 function App() {
   return (
     <>
+      {/* <ButtonAntd /> */}
+      {/* <TypographyAntd /> */}
       {/* <GridLayout /> */}
-      {/* <DefaultLayout/> */}
-      <AllRoutes/>
+      {/* <LayoutDefault /> */}
+      <AllRoutes />
     </>
   );
 }

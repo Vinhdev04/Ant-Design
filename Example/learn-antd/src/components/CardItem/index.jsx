@@ -1,14 +1,14 @@
-import React from 'react';
-import "./CardItem.css";
+import React from "react";
+import "./Cart.css";
 function CardItem(props) {
-    const { title = "" ,style} = props;
-    return (
-        <div>
-            <div className="card-item" style={style}>
-             {title &&  <h4>{ title}</h4>}
-            </div>
-        </div>
-    );
+  const { title = "", style } = props;
+  return (
+    <>
+      <div className="card-item" style={style}>
+        {title && <h4>{title}</h4>}
+      </div>
+    </>
+  );
 }
 
 export default CardItem;

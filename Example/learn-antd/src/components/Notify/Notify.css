@@ -1,82 +1,7 @@
-.layout-header {
-  display: flex;
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
-}
-
-.header-logo {
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #ddd;
-  transition: 0.3s all ease;
-}
-
-.header-navbar {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-}
-
-.header-nav--left {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-
-.header-collapse {
-  padding: 5px 15px;
-  margin-right: 0px;
-  cursor: pointer;
-  transition: 0.3s all ease-in;
-}
-
-.header-search {
-  padding: 5px 15px;
-  cursor: pointer;
-  transition: 0.3s all ease-in;
-}
-
-.header-bell {
-  padding: 5px 15px;
-  cursor: pointer;
-  transition: 0.3s all ease-in;
-  font-size: 20px;
-  position: relative;
-}
-
-.header-bell::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: red;
-  border-radius: 50%;
-  top: 4px;
-  right: 14px;
-  position: absolute;
-}
-
-.header-collapse:hover,
-.header-search:hover,
-.header-bell:hover {
-  background-color: #3f87f51a;
-  color: #3f87f5;
-}
-
-.header-logo--collapsed {
-  width: 80px;
-}
-.layout-content {
-  padding: 20px;
-}
-
 .notify__dropdown {
   background: #fff;
   border-radius: 8px;
-  min-width: 300px;
+  min-width: 260px;
   overflow: hidden;
   box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
     0 9px 28px 8px #0000000d;
@@ -97,7 +22,8 @@
 }
 
 .notify__body {
-  max-height: 300px;
+  /* max-height: 300px; */
+  max-height: 200px;
   overflow-y: scroll;
 }
 

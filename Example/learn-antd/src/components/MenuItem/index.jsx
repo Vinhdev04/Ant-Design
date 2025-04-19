@@ -1,29 +1,34 @@
 import {
-    DashboardOutlined,
-    ProductOutlined,
-    SettingOutlined,
-    UnorderedListOutlined,
-    UserOutlined,
+  DashboardOutlined,
+  ProductOutlined,
+  SettingOutlined,
+  UnorderedListOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
+import { Menu } from "antd";
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
-
-const { Sider } = Layout;
-
-function MenuItem() {
-  const location = useLocation(); // lấy đường dẫn hiện tại
-  const selectedKey = location.pathname;
-
+import { Link } from "react-router-dom";
+function MenuItem(props) {
+  //OVERVIEW: Syntax: label,key,icon,children,type
   const items = [
     {
-      label: <Link to="/ecommerce">Ecommerce</Link>,
-      key: "/ecommerce",
+      label: <Link to="/">Dashboard</Link>,
+      key: "/",
       icon: <DashboardOutlined />,
       children: [
-        { label: <Link to="/">Dashboard</Link>, key: "/" },
-        { label: <Link to="/database">Database</Link>, key: "/database" },
-        { label: <Link to="/analytics">Analytics</Link>, key: "/analytics" },
+        {
+          label: "Ecommerce",
+          key: "ecommerce",
+        },
+        {
+          // sử dụng router điều hướng trang
+          label: <Link to="/projects">Project</Link>,
+          key: "project",
+        },
+        {
+          label: "Analytics",
+          key: "analytics",
+        },
       ],
     },
     {
@@ -31,11 +36,26 @@ function MenuItem() {
       key: "users",
       icon: <UserOutlined />,
       children: [
-        { label: <Link to="/users/list">List User</Link>, key: "/users/list" },
-        { label: <Link to="/users/add">Add User</Link>, key: "/users/add" },
-        { label: <Link to="/users/edit">Edit User</Link>, key: "/users/edit" },
-        { label: <Link to="/users/delete">Delete User</Link>, key: "/users/delete" },
-        { label: <Link to="/users/detail">Detail User</Link>, key: "/users/detail" },
+        {
+          label: "List User",
+          key: "list-user",
+        },
+        {
+          label: "Add User",
+          key: "add-user",
+        },
+        {
+          label: "Edit User",
+          key: "edit-user",
+        },
+        {
+          label: "Delete User",
+          key: "delete-user",
+        },
+        {
+          label: "Detail User",
+          key: "detail-user",
+        },
       ],
     },
     {
@@ -43,11 +63,26 @@ function MenuItem() {
       key: "products",
       icon: <ProductOutlined />,
       children: [
-        { label: <Link to="/products/list">List Product</Link>, key: "/products/list" },
-        { label: <Link to="/products/add">Add Product</Link>, key: "/products/add" },
-        { label: <Link to="/products/edit">Edit Product</Link>, key: "/products/edit" },
-        { label: <Link to="/products/delete">Delete Product</Link>, key: "/products/delete" },
-        { label: <Link to="/products/detail">Detail Product</Link>, key: "/products/detail" },
+        {
+          label: "List Product",
+          key: "list-product",
+        },
+        {
+          label: "Add Product",
+          key: "add-product",
+        },
+        {
+          label: "Edit Product",
+          key: "edit-product",
+        },
+        {
+          label: "Delete Product",
+          key: "delete-product",
+        },
+        {
+          label: "Detail Product",
+          key: "detail-product",
+        },
       ],
     },
     {
@@ -55,27 +90,68 @@ function MenuItem() {
       key: "category",
       icon: <UnorderedListOutlined />,
       children: [
-        { label: <Link to="/categories/list">List Category</Link>, key: "/categories/list" },
-        { label: <Link to="/categories/add">Add Category</Link>, key: "/categories/add" },
-        { label: <Link to="/categories/edit">Edit Category</Link>, key: "/categories/edit" },
-        { label: <Link to="/categories/delete">Delete Category</Link>, key: "/categories/delete" },
-        { label: <Link to="/categories/detail">Detail Category</Link>, key: "/categories/detail" },
+        {
+          label: "List Category",
+          key: "list-category",
+        },
+        {
+          label: "Add Category",
+          key: "add-category",
+        },
+        {
+          label: "Edit Category",
+          key: "edit-category",
+        },
+        {
+          label: "Delete Category",
+          key: "delete-category",
+        },
+        {
+          label: "Detail Category",
+          key: "detail-category",
+        },
       ],
     },
     {
-      label: <Link to="/authentication">Authentication</Link>,
-      key: "/authentication",
+      label: "Setting",
+      key: "setting",
       icon: <SettingOutlined />,
+      children: [
+        {
+          label: "General",
+          key: "general",
+        },
+        {
+          label: "Security",
+          key: "security",
+        },
+        {
+          label: "Privacy",
+          key: "privacy",
+        },
+        {
+          label: "Notification",
+          key: "notification",
+        },
+      ],
     },
   ];
-
   return (
-    <Menu
-      mode="inline"
-      items={items}
-      selectedKeys={[selectedKey]} // chọn item theo route hiện tại
-      defaultOpenKeys={['/ecommerce', 'users', 'products', 'category']}
-    />
+    <>
+      <Menu
+        mode="inline"
+        items={items}
+        // item được chọn sẽ được hiển thị
+        defaultOpenKeys={["dashboard"]}
+        // key được chọn sẽ được mở
+        defaultSelectedKeys={["ecommerce"]}
+        // item được chọn sẽ được mở
+        // openKeys={["user", "products", "category", "setting"]}
+        // tương tự disabled
+        selectable={false}
+        subMenuCloseDelay={0.2}
+      ></Menu>
+    </>
   );
 }
 
