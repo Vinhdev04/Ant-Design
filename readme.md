@@ -204,6 +204,16 @@ Series này sẽ giúp bạn:
 
 ## **11: Component: `DataPicker`**
 
+### Lý thuyết:
+
+![](./Docs/Sources/Images/component-date.png)<br><br>
+
+### Ví dụ:
+
+## ![Ví dụ 01](./Docs/Sources/Images/vd-component-date.png)<br><br>
+
+---
+
 ## **12: Component: `Radio`**
 
 ## **13: Component: `Select`**

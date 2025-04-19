@@ -1,7 +1,8 @@
-import { Button, Cascader, Checkbox, Col, Input, Row, Select, Space } from "antd";
+import { Button, Cascader, Checkbox, Col, DatePicker, Input, Row, Select, Space } from "antd";
 import React, { useState } from "react";
 import "./Project.css";
 const { Option } = Select;
+const { RangePicker } = DatePicker;
 function Project() {
   const [data, setData] = useState({
     fullname: "",
@@ -18,6 +19,7 @@ function Project() {
     }));
   };
 
+  // xử lý Click
   const handleClick = () => {
     console.log("Đã gửi dữ liệu lên server", data);
     // Reset form
@@ -28,6 +30,7 @@ function Project() {
     });
   };
 
+  // xử lý onChange Checkbox
   const handleChangeCheckbox = (e) => {
     console.log(e);
     const obj = {
@@ -36,6 +39,17 @@ function Project() {
     }
     setData(obj);
     
+  }
+
+  // xử lý onChange DatePicker
+  const handleChangeDate = (dates,dateStrings) => {
+    // console.log(dates);
+    // console.log(dateStrings);
+    const obj = {
+      ...data,
+      date:dateStrings
+    }
+    setData(obj);
   }
 
   // custom select sau đó truyền vào addonAfter || addonBefore
@@ -149,6 +163,16 @@ function Project() {
         </Col>
       </Row>
 
+      <Row gutter={[20, 20]}>
+        <Col span={12}>
+          <p>Chọn thời gian</p>
+          <RangePicker format="DD-MM-YYYY" onChange={handleChangeDate} placeholder={['Ngày bắt đầu',"Ngày kết thúc"]}></RangePicker>
+          <DatePicker></DatePicker>
+          <DatePicker picker="week"></DatePicker>
+          <DatePicker picker="month"></DatePicker>
+          <DatePicker picker="year"></DatePicker>
+        </Col>
+      </Row>
     </>
   );
 }
