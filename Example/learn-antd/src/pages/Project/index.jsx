@@ -1,4 +1,4 @@
-import { Button, Cascader, Col, Input, Row, Select } from "antd";
+import { Button, Cascader, Checkbox, Col, Input, Row, Select, Space } from "antd";
 import React, { useState } from "react";
 import "./Project.css";
 const { Option } = Select;
@@ -27,6 +27,16 @@ function Project() {
       email: ""
     });
   };
+
+  const handleChangeCheckbox = (e) => {
+    console.log(e);
+    const obj = {
+      ...data,
+      services: e
+    }
+    setData(obj);
+    
+  }
 
   // custom select sau đó truyền vào addonAfter || addonBefore
   const select = (
@@ -109,7 +119,7 @@ function Project() {
           </Col>
           </Row>
       </div>
-
+      <hr></hr>
 
       <div>
         <Row gutter={[20, 20]}>
@@ -120,6 +130,25 @@ function Project() {
           
         </Row>
       </div>
+      <hr></hr>
+
+      <Row gutter={[20, 20]}>
+        <Col span={12}>
+          <p>Dịch vụ order thêm</p>
+          <Checkbox.Group
+            defaultValue={["Máy sấy tóc", "Bàn là"]} // chọn mặc định
+            onChange={handleChangeCheckbox}
+          >
+            <Space direction="vertical">
+              <Checkbox value="Máy sấy tóc">Máy sấy tóc</Checkbox>
+              <Checkbox value="Bàn là">Bàn là</Checkbox>
+              <Checkbox value="Khăn tắm">Khăn tắm</Checkbox>
+              <Checkbox value="Taxi" disabled>Taxi</Checkbox>
+            </Space>
+          </Checkbox.Group>
+        </Col>
+      </Row>
+
     </>
   );
 }

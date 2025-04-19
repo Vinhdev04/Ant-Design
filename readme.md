@@ -189,7 +189,18 @@ Series này sẽ giúp bạn:
 ![Ví dụ 01](./Docs/Sources/Images/vd-component-input-01.png)<br><br>
 ![Ví dụ 02](./Docs/Sources/Images/vd-component-input-02.png)<br><br>
 
+---
+
 ## **10: Component: `Checkbox`**
+
+### Lý thuyết:
+
+![](./Docs/Sources/Images/component-checkbox-01.png)<br><br>
+![](./Docs/Sources/Images/component-checkbox-02.png)<br><br>
+
+### Ví dụ:
+
+## ![Ví dụ 01](./Docs/Sources/Images/vd-component-checkbox.png)<br><br>
 
 ## **11: Component: `DataPicker`**
 
