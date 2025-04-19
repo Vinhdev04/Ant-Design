@@ -177,6 +177,18 @@ Series này sẽ giúp bạn:
 
 ## **09: Component: `Input`**
 
+### Lý thuyết:
+
+![ Component: `Input`](./Docs/Sources/Images/component-input-01.png)
+![ Component: `Input`](./Docs/Sources/Images/component-input-02.png)
+![ Component: `Input`](./Docs/Sources/Images/component-input-03.png)
+![ Component: `Input`](./Docs/Sources/Images/component-input-04.png)
+
+### Ví dụ:
+
+![Ví dụ 01](./Docs/Sources/Images/vd-component-input-01.png)<br><br>
+![Ví dụ 02](./Docs/Sources/Images/vd-component-input-02.png)<br><br>
+
 ## **10: Component: `Checkbox`**
 
 ## **11: Component: `DataPicker`**
