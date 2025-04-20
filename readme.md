@@ -242,10 +242,10 @@ Series này sẽ giúp bạn:
 
 ### Lý thuyết:
 
-![ Component: `Radio`](./Docs/Sources/Images/component-select-01.png)<br><br>
-![ Component: `Radio`](./Docs/Sources/Images/component-select-02.png)<br><br>
-![ Component: `Radio`](./Docs/Sources/Images/component-select-03.png)<br><br>
-![ Component: `Radio`](./Docs/Sources/Images/component-select-04.png)<br><br>
+![ Component: `Select`](./Docs/Sources/Images/component-select-01.png)<br><br>
+![ Component: `Select`](./Docs/Sources/Images/component-select-02.png)<br><br>
+![ Component: `Select`](./Docs/Sources/Images/component-select-03.png)<br><br>
+![ Component: `Select`](./Docs/Sources/Images/component-select-04.png)<br><br>
 
 ### Ví dụ:
 
@@ -254,3 +254,7 @@ Series này sẽ giúp bạn:
 --
 
 ## **14: Component: `Switch`**
+
+![ Component: `Switch`](./Docs/Sources/Images/component-switch.png)<br><br>
+
+## ![Ví dụ ](./Docs/Sources/Images/vd-component-switch.png)<br><br>

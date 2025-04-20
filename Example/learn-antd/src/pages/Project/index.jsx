@@ -1,4 +1,4 @@
-import { Button, Cascader, Checkbox, Col, DatePicker, Input, Radio, Row, Select, Space } from "antd";
+import { Button, Cascader, Checkbox, Col, DatePicker, Input, Radio, Row, Select, Space, Switch } from "antd";
 import React, { useState } from "react";
 import "./Project.css";
 const { Option } = Select;
@@ -86,6 +86,10 @@ function Project() {
     setData(obj);
   }
 
+  // 
+  const handleSwitch = (checked)=>{}
+
+
   // custom select sau đó truyền vào addonAfter || addonBefore
   const select = (
     <Select defaultValue="http://">
@@ -112,12 +116,9 @@ function Project() {
               <label>Email</label>
               <Input name="email" value={data.email} placeholder="pcv.fed@gmail.com" onChange={handleChangeInput} />
             </Col>
-            <Col span={24}>
-              <Button type="primary" onClick={handleClick}>Submit</Button>
-            </Col>
           </Row>
         </form>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+       
       </div>
       <hr></hr>
 
@@ -228,8 +229,20 @@ function Project() {
             onChange={handleChangeSelect}></Select>
           </Col>
       </Row><hr></hr>
+
+      <Row gutter={[20, 20]}>
+          <Col span={12}>
+            <p>Switch mode</p>
+            <Switch defaultChecked onChange={handleSwitch}></Switch>
+          </Col>
+      </Row><hr></hr>
+      <Col span={24}>
+        <Button type="primary" onClick={handleClick}>Submit</Button>
+      </Col>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
   );
 }
 
 export default Project;
+ 
