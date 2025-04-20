@@ -7,8 +7,21 @@ function Project() {
   const [data, setData] = useState({
     fullname: "",
     position: "",
-    email: ""
+    email: "",
+    time: "14 giờ"
   });
+
+  
+  // tạo các options
+  const options = [
+    
+  ];
+  for(let i = 7; i<=24; i++){
+    options.push({
+      value: i > 9 ? `${i} giờ` : `0${i} giờ`,
+      label: i > 9 ? `${i} giờ` : `0${i} giờ`
+    });
+  }
 
   // lấy data cũ  nối vào data mới
   const handleChangeInput = (e) => {
@@ -60,6 +73,16 @@ function Project() {
       gift:e.target.value
     }
     
+    setData(obj);
+  }
+
+  // xử lý onChange Select
+  const handleChangeSelect = (e)=> {
+    console.log(e);
+    const obj = {
+      ...data,
+      time:e
+    }
     setData(obj);
   }
 
@@ -193,6 +216,16 @@ function Project() {
               <Radio value="mouse">Mouse</Radio>
               <Radio value="television" disabled>Television</Radio>
             </Radio.Group>
+          </Col>
+      </Row><hr></hr>
+
+      <Row gutter={[20, 20]}>
+          <Col span={12}>
+            <p>Lựa Chọn khung giờ</p>
+            <Select options={options} 
+            style={{width:"120px"}} 
+            defaultValue={data.time} 
+            onChange={handleChangeSelect}></Select>
           </Col>
       </Row><hr></hr>
     </>

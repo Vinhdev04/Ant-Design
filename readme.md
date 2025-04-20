@@ -53,7 +53,7 @@ Series này sẽ giúp bạn:
 
 ### Form nâng cao
 
-![Ant Design Table & Filter](./Docs/Sources/Images/Ant-Design-Table-Filter-21.png)
+![Ant Design Table & Filter](./Docs/Sources/Images/Ant-Design-Table-Filter-02.png)
 
 ---
 
@@ -79,11 +79,22 @@ Series này sẽ giúp bạn:
 
 ---
 
-### 📌 Tên dự án: `<!-- điền tên dự án ở đây -->`
+### 📌 Tên dự án: `<!-- Elink Dashboard -->`
+
+#### Dự an 01:
+
+- <b>`Link demo:` </b> <a>https://enlink.themenate.net/dashboard/default</a>
 
 ---
 
-### 🧱 Cấu trúc cơ bản (React + AntD)
+### 🧱Template Designer
+
+![Images 01](./Docs/Sources/Images/design-01.png)
+![Images 02](./Docs/Sources/Images/design-02.png)
+![Images 03](./Docs/Sources/Images/design-03.png)
+![Images 04](./Docs/Sources/Images/design-04.png)
+![Images 05](./Docs/Sources/Images/design-05.png)
+![Images 06](./Docs/Sources/Images/design-06.png)
 
 ---
 
@@ -195,8 +206,8 @@ Series này sẽ giúp bạn:
 
 ### Lý thuyết:
 
-![](./Docs/Sources/Images/component-checkbox-01.png)<br><br>
-![](./Docs/Sources/Images/component-checkbox-02.png)<br><br>
+![Component: `Checkbox`](./Docs/Sources/Images/component-checkbox-01.png)<br><br>
+![Component: `Checkbox`](./Docs/Sources/Images/component-checkbox-02.png)<br><br>
 
 ### Ví dụ:
 
@@ -206,16 +217,40 @@ Series này sẽ giúp bạn:
 
 ### Lý thuyết:
 
-![](./Docs/Sources/Images/component-date.png)<br><br>
+![Component: `DataPicker`](./Docs/Sources/Images/component-date.png)<br><br>
 
 ### Ví dụ:
 
-## ![Ví dụ 01](./Docs/Sources/Images/vd-component-date.png)<br><br>
+## ![Ví dụ ](./Docs/Sources/Images/vd-component-date.png)<br><br>
 
 ---
 
 ## **12: Component: `Radio`**
 
+### Lý thuyết:
+
+![ Component: `Radio`](./Docs/Sources/Images/component-radio-01.png)<br><br>
+![ Component: `Radio`](./Docs/Sources/Images/component-radio-02.png)<br><br>
+
+### Ví dụ:
+
+## ![Ví dụ ](./Docs/Sources/Images/vd-component-radio.png)<br><br>
+
+--
+
 ## **13: Component: `Select`**
+
+### Lý thuyết:
+
+![ Component: `Radio`](./Docs/Sources/Images/component-select-01.png)<br><br>
+![ Component: `Radio`](./Docs/Sources/Images/component-select-02.png)<br><br>
+![ Component: `Radio`](./Docs/Sources/Images/component-select-03.png)<br><br>
+![ Component: `Radio`](./Docs/Sources/Images/component-select-04.png)<br><br>
+
+### Ví dụ:
+
+## ![Ví dụ ](./Docs/Sources/Images/vd-component-select.png)<br><br>
+
+--
 
 ## **14: Component: `Switch`**
