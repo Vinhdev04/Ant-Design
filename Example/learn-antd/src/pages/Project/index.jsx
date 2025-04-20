@@ -1,4 +1,4 @@
-import { Button, Cascader, Checkbox, Col, DatePicker, Input, Row, Select, Space } from "antd";
+import { Button, Cascader, Checkbox, Col, DatePicker, Input, Radio, Row, Select, Space } from "antd";
 import React, { useState } from "react";
 import "./Project.css";
 const { Option } = Select;
@@ -49,6 +49,17 @@ function Project() {
       ...data,
       date:dateStrings
     }
+    setData(obj);
+  }
+
+  // xử lý onChange Radio
+  const handleChangeRadio = (e) => {
+    console.log(e);
+    const obj = {
+      ...data,
+      gift:e.target.value
+    }
+    
     setData(obj);
   }
 
@@ -161,7 +172,7 @@ function Project() {
             </Space>
           </Checkbox.Group>
         </Col>
-      </Row>
+      </Row><hr></hr>
 
       <Row gutter={[20, 20]}>
         <Col span={12}>
@@ -172,7 +183,18 @@ function Project() {
           <DatePicker picker="month"></DatePicker>
           <DatePicker picker="year"></DatePicker>
         </Col>
-      </Row>
+      </Row><hr></hr>
+
+        <Row gutter={[20, 20]}>
+          <Col span={12}>
+            <p>Gift</p>
+            <Radio.Group onChange={handleChangeRadio} name="gift">
+              <Radio value="keyboard" >Keyboard</Radio>
+              <Radio value="mouse">Mouse</Radio>
+              <Radio value="television" disabled>Television</Radio>
+            </Radio.Group>
+          </Col>
+      </Row><hr></hr>
     </>
   );
 }
