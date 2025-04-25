@@ -1,4 +1,5 @@
 import LayoutDefault from "../Layout/LayoutDefault";
+import CreateRoom from "../pages/CreateRoom";
 import Dashboard from "../pages/Dashboard";
 import Project from "../pages/Project";
 
@@ -15,6 +16,10 @@ export const routes = [
       {
         path: "/projects",
         element: <Project />,
+      },
+      {
+        path: "/create-room",
+        element: <CreateRoom />,
       },
     ],
   },

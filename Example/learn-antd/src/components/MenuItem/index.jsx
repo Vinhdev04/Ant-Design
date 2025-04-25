@@ -1,7 +1,7 @@
 import {
   DashboardOutlined,
   ProductOutlined,
-  SettingOutlined,
+  AccountBookOutlined,
   UnorderedListOutlined,
   UserOutlined,
 } from "@ant-design/icons";
@@ -113,27 +113,9 @@ function MenuItem(props) {
       ],
     },
     {
-      label: "Setting",
-      key: "setting",
-      icon: <SettingOutlined />,
-      children: [
-        {
-          label: "General",
-          key: "general",
-        },
-        {
-          label: "Security",
-          key: "security",
-        },
-        {
-          label: "Privacy",
-          key: "privacy",
-        },
-        {
-          label: "Notification",
-          key: "notification",
-        },
-      ],
+      label: <Link to="/create-room">Create Room</Link>,
+      key: "/create-room",
+      icon: <AccountBookOutlined />,
     },
   ];
   return (

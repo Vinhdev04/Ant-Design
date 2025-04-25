@@ -236,7 +236,7 @@ Series này sẽ giúp bạn:
 
 ## ![Ví dụ ](./Docs/Sources/Images/vd-component-radio.png)<br><br>
 
---
+---
 
 ## **13: Component: `Select`**
 
@@ -251,10 +251,30 @@ Series này sẽ giúp bạn:
 
 ## ![Ví dụ ](./Docs/Sources/Images/vd-component-select.png)<br><br>
 
---
+---
 
 ## **14: Component: `Switch`**
 
 ![ Component: `Switch`](./Docs/Sources/Images/component-switch.png)<br><br>
 
-## ![Ví dụ ](./Docs/Sources/Images/vd-component-switch.png)<br><br>
+### ![Ví dụ ](./Docs/Sources/Images/vd-component-switch.png)<br><br>
+
+---
+
+## **15: Component: `Form`**
+
+### Lý thuyết:
+
+![ Component: `Form`](./Docs/Sources/Images/component-form-01.png)<br><br>
+![ Component: `Form`](./Docs/Sources/Images/component-form-02.png)<br><br>
+![ Component: `Form`](./Docs/Sources/Images/component-form-03.png)<br><br>
+![ Component: `Form`](./Docs/Sources/Images/component-form-04.png)<br><br>
+
+###
+
+![Ví dụ ](./Docs/Sources/Images/vd-component-form-01.png)<br><br>
+![Ví dụ ](./Docs/Sources/Images/vd-component-form-02.png)<br><br>
+
+---
+
+## **15: Component: `Badge`**
